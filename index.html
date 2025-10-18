@@ -1,214 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <title>RT Online — Demo Landing (HTML/CSS/JS)</title>
+    <meta
+      name="description"
+      content="Demo landing page mirip layanan RT Online. Dibuat dengan HTML, CSS, dan JS saja (tanpa framework)."
+    />
   </head>
   <body>
-    <div class="pembungkus">
-      <nav class="navbar">
-        <h1>Kelompok4</h1>
-        <div class="navlink">
-          <a href="">Beranda</a>
-          <a href="">Tentang Kami</a>
-          <a href="">Informasi</a>
-          <a href="">Kegiatan</a>
-          <a href="">Sosial Media</a>
+    <!-- NAV -->
+    <div class="container nav-wrap">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>RT Online</span>
+        </div>
+        <ul id="navlinks">
+          <li><a class="link" href="#fitur">Fitur</a></li>
+          <li><a class="link" href="#cara-kerja">Cara Kerja</a></li>
+          <li><a class="link" href="#harga">Harga</a></li>
+          <li><a class="link" href="#faq">FAQ</a></li>
+        </ul>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a class="btn" href="#demo">Demo</a>
+          <a class="btn btn-primary" href="#daftar">Daftar</a>
+          <button class="btn hamb" id="hamb">☰</button>
         </div>
       </nav>
+    </div>
 
-      <div class="container">
-        <div class="sideleft box">
-          <a href=""
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            aliquid.</a
-          >
-          <a href="">b</a>
-          <a href="">c</a>
-          <a href="">d</a>
-          <a href="">e</a>
-          <a href="">f</a>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow">📊 Kelola data RT/RW secara modern</span>
+          <h1 class="title">
+            Satu <b>dashboard</b> untuk administrasi <b>RT</b> — dari iuran
+            sampai surat menyurat.
+          </h1>
+          <p class="lead">
+            Website demo ini mencontoh struktur landing page layanan manajemen
+            RT/RW. Semua konten, teks, dan gaya bersifat generik (bukan copy
+            dari situs mana pun).
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#daftar">Coba Gratis</a>
+            <a class="btn" href="#fitur">Lihat Fitur</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="num">10K+</div>
+              <div class="muted">Warga Terdaftar</div>
+            </div>
+            <div class="stat">
+              <div class="num">1.2K</div>
+              <div class="muted">RT aktif</div>
+            </div>
+            <div class="stat">
+              <div class="num">99.9%</div>
+              <div class="muted">Uptime</div>
+            </div>
+            <div class="stat">
+              <div class="num">24/7</div>
+              <div class="muted">Support</div>
+            </div>
+          </div>
         </div>
-
-        <div class="main box">
-          <h1>Ganti</h1>
-          <img src="" alt="anuan" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi atque
-            unde deserunt animi nesciunt vel autem perspiciatis ullam. Nemo
-            animi eos est dolore accusantium dolorem, beatae aliquam voluptas
-            quis corrupti!
-          </p>
-
-          <h2>asasc</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            impedit ratione nam totam ullam esse in fuga natus cupiditate
-            recusandae praesentium quod, commodi temporibus suscipit fugiat quis
-            tempore laborum sit optio id! Cumque culpa ullam in explicabo
-            adipisci molestias dolorum optio? Eius nihil aliquid harum quos
-            autem a sequi blanditiis.
-          </p>
-        </div>
-
-        <div class="sideright box">
-          <p>Lorem, ipsum dolor.</p>
+        <div class="card">
+          <div class="screen">
+            <img
+              src="/img/IMG-20251010-WA0008.jpg"
+              alt="Tampilan dashboard RT Online"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section id="fitur" class="section container">
+      <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
+        Fitur Utama
+      </h2>
+      <p class="muted">Semua yang dibutuhkan pengurus dalam satu tempat.</p>
+      <div class="grid-3" style="margin-top: 18px">
+        <article class="card feature">
+          <h3>Manajemen Warga</h3>
+          <p>
+            Tambah, impor, dan kelola data KK/individu, lengkap dengan status
+            domisili.
+          </p>
+        </article>
+        <article class="card feature">
+          <h3>Iuran & Keuangan</h3>
+          <p>
+            Pencatatan pemasukan/pengeluaran, pengingat iuran, ekspor laporan
+            bulanan.
+          </p>
+        </article>
+        <article class="card feature">
+          <h3>Surat Otomatis</h3>
+          <p>
+            Template surat keterangan domisili, usaha, pengantar, dengan nomor
+            surat otomatis.
+          </p>
+        </article>
+        <article class="card feature">
+          <h3>Pengumuman & Voting</h3>
+          <p>
+            Bagikan pengumuman dan lakukan polling warga langsung dari
+            dashboard.
+          </p>
+        </article>
+        <article class="card feature">
+          <h3>Arsip Digital</h3>
+          <p>
+            Unggah dokumen penting dan cari cepat berdasarkan tag atau nomor
+            surat.
+          </p>
+        </article>
+        <article class="card feature">
+          <h3>Role & Akses</h3>
+          <p>Kelola hak akses ketua RT, bendahara, sekretaris, dan ketua RW.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="cara-kerja" class="section container">
+      <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
+        Cara Kerja
+      </h2>
+      <div class="steps" style="margin-top: 18px">
+        <div class="card step">
+          <div class="bullet">1</div>
+          <div>
+            <h3>Daftar</h3>
+            <p>Buat akun pengurus untuk wilayah RT Anda.</p>
+          </div>
+        </div>
+        <div class="card step">
+          <div class="bullet">2</div>
+          <div>
+            <h3>Siapkan Data</h3>
+            <p>Impor data warga dan set tarif iuran.</p>
+          </div>
+        </div>
+        <div class="card step">
+          <div class="bullet">3</div>
+          <div>
+            <h3>Mulai Operasional</h3>
+            <p>Kelola iuran, cetak surat, dan pantau laporan realtime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="harga" class="section container">
+      <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
+        Harga Sederhana
+      </h2>
+      <div class="pricing" style="margin-top: 18px">
+        <article class="card price-card">
+          <span class="badge">Gratis</span>
+          <h3>Starter</h3>
+          <p class="price">Rp 0</p>
+          <ul class="muted">
+            <li>100 warga</li>
+            <li>2 template surat</li>
+            <li>Ekspor CSV</li>
+          </ul>
+          <a class="btn" href="#daftar">Mulai</a>
+        </article>
+        <article class="card price-card">
+          <span class="badge">Populer</span>
+          <h3>Pro</h3>
+          <p class="price">Rp 99.000/bln</p>
+          <ul class="muted">
+            <li>Tak terbatas warga</li>
+            <li>Semua template surat</li>
+            <li>Pengingat iuran via email</li>
+          </ul>
+          <a class="btn btn-primary" href="#daftar">Pilih Pro</a>
+        </article>
+        <article class="card price-card">
+          <h3>Enterprise</h3>
+          <p class="price">Hubungi Kami</p>
+          <ul class="muted">
+            <li>Multi RT/RW</li>
+            <li>Single Sign-On</li>
+            <li>Dukungan SLA</li>
+          </ul>
+          <a class="btn" href="#kontak">Kontak Sales</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section container">
+      <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
+        Apa Kata Pengguna
+      </h2>
+      <div class="testis" style="margin-top: 18px">
+        <article class="card">
+          <p class="quote">
+            “Sekarang pencatatan iuran rapi dan cepat direkap!”
+          </p>
+          <p class="muted">— Pak Rudi, Ketua RT 05</p>
+        </article>
+        <article class="card">
+          <p class="quote">
+            “Cetak surat tinggal klik, nggak perlu format ulang.”
+          </p>
+          <p class="muted">— Bu Sari, Sekretaris RT 02</p>
+        </article>
+        <article class="card">
+          <p class="quote">
+            “Warga jadi transparan, laporan bisa dibagikan tiap bulan.”
+          </p>
+          <p class="muted">— Mas Dani, Bendahara RT 10</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section container faq">
+      <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
+        Pertanyaan Umum
+      </h2>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Apakah ini menyalin situs tertentu?</span
+          ><button class="btn" aria-label="toggle">+</button>
+        </div>
+        <div class="faq-a">
+          Tidak. Ini adalah layout generik yang meniru pola landing page modern
+          tanpa menyalin teks/brand dari pihak lain.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Bagaimana hostingnya?</span
+          ><button class="btn" aria-label="toggle">+</button>
+        </div>
+        <div class="faq-a">
+          Kamu bisa host di Netlify, Vercel, GitHub Pages, atau server sendiri
+          karena hanya HTML/CSS/JS statis.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Bisakah ditambah fitur login?</span
+          ><button class="btn" aria-label="toggle">+</button>
+        </div>
+        <div class="faq-a">
+          Bisa, tetapi butuh backend atau auth pihak ketiga (misal Supabase,
+          Firebase). Untuk demo ini, fokus di tampilan.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="kontak" class="section container">
+      <div
+        class="card"
+        style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px"
+      >
+        <div>
+          <h3>Siap mengelola RT lebih mudah?</h3>
+          <p class="muted">
+            Hubungi kami untuk demo lengkap atau minta kustomisasi sesuai
+            kebutuhan wilayahmu.
+          </p>
+          <form
+            onsubmit="event.preventDefault(); alert('Terima kasih! Kami akan menghubungi Anda.');"
+          >
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                margin: 12px 0;
+              "
+            >
+              <input
+                required
+                placeholder="Nama"
+                style="
+                  padding: 12px;
+                  border-radius: 10px;
+                  border: 1px solid var(--glass-brd);
+                  background: var(--glass);
+                  color: var(--text);
+                "
+              />
+              <input
+                required
+                type="email"
+                placeholder="Email"
+                style="
+                  padding: 12px;
+                  border-radius: 10px;
+                  border: 1px solid var(--glass-brd);
+                  background: var(--glass);
+                  color: var(--text);
+                "
+              />
+            </div>
+            <textarea
+              required
+              placeholder="Ceritakan kebutuhan RT Anda"
+              rows="4"
+              style="
+                width: 100%;
+                padding: 12px;
+                border-radius: 10px;
+                border: 1px solid var(--glass-brd);
+                background: var(--glass);
+                color: var(--text);
+              "
+            ></textarea>
+            <div style="margin-top: 12px">
+              <button class="btn btn-primary" type="submit">Kirim</button>
+            </div>
+          </form>
+        </div>
+        <aside class="card">
+          <h4>Keamanan Data</h4>
+          <p class="muted">
+            Data warga sensitif. Pastikan enkripsi saat transit (HTTPS) dan
+            kontrol akses yang ketat pada implementasi produksi.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <div class="foot">
+        <div>
+          <div class="brand" style="margin-bottom: 10px">
+            <span class="brand-badge"></span><span>RT Online</span>
+          </div>
+          <p class="copy">
+            Demo antarmuka. Gunakan sebagai titik awal lalu sesuaikan konten &
+            identitas brand Anda sendiri.
+          </p>
+        </div>
+        <div>
+          <h4>Produk</h4>
+          <ul class="muted" style="list-style: none; padding-left: 0">
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Perusahaan</h4>
+          <ul class="muted" style="list-style: none; padding-left: 0">
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat Layanan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti</h4>
+          <ul class="muted" style="list-style: none; padding-left: 0">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© <span id="year"></span> RT Online Demo.</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
