@@ -19,24 +19,23 @@
           <span>RT Online</span>
         </div>
         <ul id="navlinks">
+          <li><a class="link" href="#home">Home</a></li>
           <li><a class="link" href="#fitur">Fitur</a></li>
-          <li><a class="link" href="#cara-kerja">Cara Kerja</a></li>
-          <li><a class="link" href="#harga">Harga</a></li>
+          <li><a class="link" href="#profil">Profil</a></li>
+          <li><a class="link" href="#galery">Galery</a></li>
           <li><a class="link" href="#faq">FAQ</a></li>
         </ul>
         <div style="display: flex; gap: 10px; align-items: center">
-          <a class="btn" href="#demo">Demo</a>
-          <a class="btn btn-primary" href="#daftar">Daftar</a>
+          <a class="btn btn-primary" href="#daftar">Pendaftaran</a>
           <button class="btn hamb" id="hamb">☰</button>
         </div>
       </nav>
     </div>
 
     <!-- HERO -->
-    <header class="hero">
+    <header id="home" class="hero">
       <div class="container hero-inner">
         <div>
-          <span class="eyebrow">📊 Kelola data RT/RW secara modern</span>
           <h1 class="title">
             Satu <b>dashboard</b> untuk administrasi <b>RT</b> — dari iuran
             sampai surat menyurat.
@@ -46,10 +45,6 @@
             RT/RW. Semua konten, teks, dan gaya bersifat generik (bukan copy
             dari situs mana pun).
           </p>
-          <div class="cta">
-            <a class="btn btn-primary" href="#daftar">Coba Gratis</a>
-            <a class="btn" href="#fitur">Lihat Fitur</a>
-          </div>
           <div class="stats">
             <div class="stat">
               <div class="num">10K+</div>
@@ -130,9 +125,9 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="cara-kerja" class="section container">
+    <section id="profil" class="section container">
       <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
-        Cara Kerja
+        Profile
       </h2>
       <div class="steps" style="margin-top: 18px">
         <div class="card step">
@@ -160,13 +155,16 @@
     </section>
 
     <!-- PRICING -->
-    <section id="harga" class="section container">
+    <section id="galery" class="section container">
       <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
-        Harga Sederhana
+        Galery
       </h2>
       <div class="pricing" style="margin-top: 18px">
         <article class="card price-card">
-          <span class="badge">Gratis</span>
+          <div class="glr">
+            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
+          </div>
+          <!-- <span class="badge">Gratis</span>
           <h3>Starter</h3>
           <p class="price">Rp 0</p>
           <ul class="muted">
@@ -174,10 +172,13 @@
             <li>2 template surat</li>
             <li>Ekspor CSV</li>
           </ul>
-          <a class="btn" href="#daftar">Mulai</a>
+          <a class="btn" href="#daftar">Mulai</a> -->
         </article>
         <article class="card price-card">
-          <span class="badge">Populer</span>
+          <div class="glr">
+            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
+          </div>
+          <!-- <span class="badge">Populer</span>
           <h3>Pro</h3>
           <p class="price">Rp 99.000/bln</p>
           <ul class="muted">
@@ -185,17 +186,20 @@
             <li>Semua template surat</li>
             <li>Pengingat iuran via email</li>
           </ul>
-          <a class="btn btn-primary" href="#daftar">Pilih Pro</a>
+          <a class="btn btn-primary" href="#daftar">Pilih Pro</a> -->
         </article>
         <article class="card price-card">
-          <h3>Enterprise</h3>
+          <div class="glr">
+            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
+          </div>
+          <!-- <h3>Enterprise</h3>
           <p class="price">Hubungi Kami</p>
           <ul class="muted">
             <li>Multi RT/RW</li>
             <li>Single Sign-On</li>
             <li>Dukungan SLA</li>
           </ul>
-          <a class="btn" href="#kontak">Kontak Sales</a>
+          <a class="btn" href="#kontak">Kontak Sales</a> -->
         </article>
       </div>
     </section>
@@ -271,13 +275,12 @@
         style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px"
       >
         <div>
-          <h3>Siap mengelola RT lebih mudah?</h3>
+          <h3>Layanan Pengaduan Masyarakat!</h3>
           <p class="muted">
-            Hubungi kami untuk demo lengkap atau minta kustomisasi sesuai
-            kebutuhan wilayahmu.
+            Masukanmu berharga untuk menjadikan lingkungan yang lebih baik
           </p>
           <form
-            onsubmit="event.preventDefault(); alert('Terima kasih! Kami akan menghubungi Anda.');"
+            onsubmit="event.preventDefault(); alert('Terima kasih! Masukanmu akan segera kami tinjau');"
           >
             <div
               style="
@@ -300,8 +303,10 @@
               />
               <input
                 required
-                type="email"
-                placeholder="Email"
+                type="tel"
+                pattern="[0-9]+"
+                maxlength="15"
+                placeholder="Nomer Handphone"
                 style="
                   padding: 12px;
                   border-radius: 10px;
@@ -313,7 +318,7 @@
             </div>
             <textarea
               required
-              placeholder="Ceritakan kebutuhan RT Anda"
+              placeholder="Keluhan atau Keresahanmu"
               rows="4"
               style="
                 width: 100%;
@@ -330,10 +335,12 @@
           </form>
         </div>
         <aside class="card">
-          <h4>Keamanan Data</h4>
+          <h4>Pak Ganjar</h4>
           <p class="muted">
-            Data warga sensitif. Pastikan enkripsi saat transit (HTTPS) dan
-            kontrol akses yang ketat pada implementasi produksi.
+            Saya ingin melaporkan kondisi jalan di depan SDN Cempaka 02 yang
+            rusak parah dan berlubang. Kondisi ini membahayakan pengendara motor
+            dan anak-anak sekolah yang melintas setiap pagi. Mohon pihak terkait
+            segera melakukan perbaikan.
           </p>
         </aside>
       </div>
@@ -368,10 +375,10 @@
           </ul>
         </div>
         <div>
-          <h4>Ikuti</h4>
+          <h4>Social Media</h4>
           <ul class="muted" style="list-style: none; padding-left: 0">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
           </ul>
         </div>

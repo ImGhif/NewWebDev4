@@ -12,9 +12,20 @@ if (hamb) {
 document.querySelectorAll(".faq-item").forEach((item) => {
   const q = item.querySelector(".faq-q");
   const a = item.querySelector(".faq-a");
+  const btn = q.querySelector("button[aria-label='toggle']");
+
+  // initialize ARIA
+  if (btn) btn.setAttribute("aria-expanded", "false");
+  if (a) a.setAttribute("aria-hidden", "true");
+
   q.addEventListener("click", () => {
-    const open = a.style.display === "block";
-    a.style.display = open ? "none" : "block";
+    const isOpen = item.classList.toggle("open");
+    // update aria and icon
+    if (btn) {
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      btn.textContent = isOpen ? "-" : "+";
+    }
+    if (a) a.setAttribute("aria-hidden", isOpen ? "false" : "true");
   });
 });
 
