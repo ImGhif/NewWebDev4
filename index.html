@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <title>RT Online — Demo Landing (HTML/CSS/JS)</title>
-    <meta
-      name="description"
-      content="Demo landing page mirip layanan RT Online. Dibuat dengan HTML, CSS, dan JS saja (tanpa framework)."
-    />
+    <title>RT/RW Online</title>
+    <meta name="description" content="Demo landing page layanan RT Online." />
   </head>
   <body>
     <!-- NAV -->
@@ -16,7 +13,7 @@
       <nav class="nav">
         <div class="brand">
           <span class="brand-badge" aria-hidden="true"></span>
-          <span>RT Online</span>
+          <span>RT/RW Online</span>
         </div>
         <ul id="navlinks">
           <li><a class="link" href="#home">Home</a></li>
@@ -47,7 +44,7 @@
           </p>
           <div class="stats">
             <div class="stat">
-              <div class="num">10K+</div>
+              <div class="num">150+</div>
               <div class="muted">Warga Terdaftar</div>
             </div>
             <div class="stat">
@@ -66,10 +63,7 @@
         </div>
         <div class="card">
           <div class="screen">
-            <img
-              src="/img/IMG-20251010-WA0008.jpg"
-              alt="Tampilan dashboard RT Online"
-            />
+            <img src="img/IMG-20251010-WA0008.jpg" alt="Kegiatan Warga" />
           </div>
         </div>
       </div>
@@ -159,48 +153,17 @@
       <h2 style="font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px">
         Galery
       </h2>
-      <div class="pricing" style="margin-top: 18px">
-        <article class="card price-card">
-          <div class="glr">
-            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
-          </div>
-          <!-- <span class="badge">Gratis</span>
-          <h3>Starter</h3>
-          <p class="price">Rp 0</p>
-          <ul class="muted">
-            <li>100 warga</li>
-            <li>2 template surat</li>
-            <li>Ekspor CSV</li>
-          </ul>
-          <a class="btn" href="#daftar">Mulai</a> -->
-        </article>
-        <article class="card price-card">
-          <div class="glr">
-            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
-          </div>
-          <!-- <span class="badge">Populer</span>
-          <h3>Pro</h3>
-          <p class="price">Rp 99.000/bln</p>
-          <ul class="muted">
-            <li>Tak terbatas warga</li>
-            <li>Semua template surat</li>
-            <li>Pengingat iuran via email</li>
-          </ul>
-          <a class="btn btn-primary" href="#daftar">Pilih Pro</a> -->
-        </article>
-        <article class="card price-card">
-          <div class="glr">
-            <img src="img/IMG-20251010-WA0006.jpg" alt="" />
-          </div>
-          <!-- <h3>Enterprise</h3>
-          <p class="price">Hubungi Kami</p>
-          <ul class="muted">
-            <li>Multi RT/RW</li>
-            <li>Single Sign-On</li>
-            <li>Dukungan SLA</li>
-          </ul>
-          <a class="btn" href="#kontak">Kontak Sales</a> -->
-        </article>
+      <!-- Slider: will be populated by script.js using images in /img -->
+      <div class="gallery-wrap" style="margin-top: 18px">
+        <div class="gallery card" id="gallery" aria-roledescription="carousel">
+          <button class="g-btn g-prev" id="gPrev" aria-label="Previous image">
+            ‹
+          </button>
+          <div class="g-track" id="gTrack" tabindex="0"></div>
+          <button class="g-btn g-next" id="gNext" aria-label="Next image">
+            ›
+          </button>
+        </div>
       </div>
     </section>
 
@@ -361,6 +324,7 @@
         <div>
           <h4>Produk</h4>
           <ul class="muted" style="list-style: none; padding-left: 0">
+            <li><a href="#home">Home</a></li>
             <li><a href="#fitur">Fitur</a></li>
             <li><a href="#harga">Harga</a></li>
             <li><a href="#faq">FAQ</a></li>
