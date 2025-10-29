@@ -8,6 +8,36 @@ if (hamb) {
   });
 }
 
+// Update active section in navigation
+function updateActiveSection() {
+  const sections = document.querySelectorAll("section[id], header[id]");
+  const navLinks = document.querySelectorAll(".nav .link");
+
+  let currentSectionId = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+    if (
+      window.pageYOffset >= sectionTop &&
+      window.pageYOffset < sectionTop + sectionHeight
+    ) {
+      currentSectionId = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${currentSectionId}`) {
+      link.classList.add("active");
+    }
+  });
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", updateActiveSection);
+updateActiveSection(); // Run once on page load
+
 // FAQ accordion
 document.querySelectorAll(".faq-item").forEach((item) => {
   const q = item.querySelector(".faq-q");

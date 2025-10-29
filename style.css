@@ -1,22 +1,26 @@
 :root {
-  --bg: #e7e7e7; /* slate-900 */
-  --card: #ff0000; /* gray-900 */
-  --muted: black; /* slate-400 */
-  --text: black; /* gray-200 */
-  --brand: #0ea5e9; /* sky-500 */
-  --brand-2: #22d3ee; /* cyan-400 */
+  --bg: #f5f5f5;
+  --card: #ffffff;
+  --muted: #666666;
+  --text: #333333;
+  --brand: #0ea5e9;
+  --brand-2: #22d3ee;
   --ring: rgba(34, 211, 238, 0.35);
   --radius: 18px;
   --radius-lg: 28px;
-  --shadow: 0 5px 25px rgba(2, 8, 23, 0.35);
-  --glass: rgba(255, 255, 255, 0.06);
-  --glass-brd: rgba(255, 255, 255, 0.12);
+  --shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  --glass: rgba(255, 255, 255, 0.1);
+  --glass-brd: rgba(255, 255, 255, 0.2);
   --maxw: 1600px;
-  --nav-height: 64px; /* visual height of the floating nav */
-  --nav-offset: 18px; /* distance from viewport edge */
+  --nav-height: 64px;
+  --nav-offset: 18px;
+  --section-padding: 72px;
 }
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -114,10 +118,15 @@ a {
   opacity: 0.85;
   padding: 8px 12px;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 .nav a.link:hover {
   opacity: 1;
   background: var(--glass);
+}
+.nav a.link.active {
+  background: var(--glass);
+  opacity: 1;
 }
 .btn {
   display: inline-flex;
@@ -184,7 +193,7 @@ a {
   flex-wrap: wrap;
 }
 .card {
-  background: rgba(230, 230, 230, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--glass-brd);
   border-radius: var(--radius-lg);
   padding: 20px;
@@ -231,16 +240,17 @@ a {
 
 /* FEATURES */
 .section {
-  padding: 72px 0;
+  padding: var(--section-padding) 0;
+  scroll-margin-top: calc(var(--nav-height) + var(--nav-offset) + 20px);
 }
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
-.feature h3 {
+/* .feature h3 {
   margin: 0.6rem 0;
-}
+} */
 
 /* HOW IT WORKS */
 .steps {
@@ -401,7 +411,7 @@ footer {
 
 /* GALLERY / SLIDER */
 .gallery-wrap {
-  max-width: 1100px;
+  max-width: 1500px;
   margin-inline: auto;
 }
 .gallery {
@@ -411,6 +421,8 @@ footer {
   gap: 12px;
   padding: 14px;
   overflow: visible;
+  /* width: 1000px;
+  height: 100px; */
 }
 .g-track {
   width: 100%;
@@ -424,8 +436,7 @@ footer {
 }
 .g-item {
   flex: 0 0 auto;
-  width: clamp(260px, 62%, 820px);
-  aspect-ratio: 4 / 5;
+  width: clamp(260px, 100%, 820px);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: none;
